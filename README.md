@@ -7,8 +7,8 @@ Variabel total setiap kali ditimpa oleh nilai n, bukan dijumlahkan.
 Artinya setelah loop selesai, total hanya berisi nilai terakhir dari list.
 
 #potongan kode:
-for n in nilai:
-    total = n
+`for n in nilai:
+    total = n`
 
 Iterasi berjalan seperti ini:
 
@@ -24,17 +24,17 @@ Pada kasus ini memiliki logic error, karena syntax yang di tulis bisa berjalan n
 
 # 3) SOLUSI
 Ubah potongan kode berikut:
-for n in nilai:
-    total = n
+`for n in nilai:
+    total = n`
 
 menjadi:
-for n in nilai:
-    total += n
+`for n in nilai:
+    total += n`
 
 
 # FUNGSI TIDAK DIPANGGIL
 Potongan kode:
-print("Kategori:", kategori_nilai)
+`print("Kategori:", kategori_nilai)`
 
 # 1) Penjelasan Bug
 
@@ -42,7 +42,7 @@ Di sini fungsi kategori_nilai tidak dipanggil.
 Yang dicetak hanyalah objek fungsi itu sendiri.
 
 Hasilnya akan menjadi seperti ini:
-Kategori: <function kategori_nilai at 0x7be736d9c220>
+`Kategori: <function kategori_nilai at 0x7be736d9c220>`
 
 # 2) Jenis Error
 
@@ -54,9 +54,9 @@ jadi disini program tetap hidup, tapi salah makna.
 
 # 3) Solusi
 
-Panggil fungsi dengan parameter (rata):
+Panggil fungsi dengan parameter `(rata)`:
 
-print("Kategori:", kategori_nilai(rata))
+`print("Kategori:", kategori_nilai(rata))`
 
 
 
