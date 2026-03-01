@@ -7,8 +7,10 @@ Variabel total setiap kali ditimpa oleh nilai n, bukan dijumlahkan.
 Artinya setelah loop selesai, total hanya berisi nilai terakhir dari list.
 
 #potongan kode:
-`for n in nilai:
-    total = n`
+```python
+for n in nilai:
+    total = n
+```
 
 Iterasi berjalan seperti ini:
 
@@ -24,17 +26,23 @@ Pada kasus ini memiliki logic error, karena syntax yang di tulis bisa berjalan n
 
 # 3) SOLUSI
 Ubah potongan kode berikut:
-`for n in nilai:
-    total = n`
+```python
+for n in nilai:
+    total = n
+```
 
 menjadi:
-`for n in nilai:
-    total += n`
+```python
+for n in nilai:
+    total += n
+```
 
 
 # FUNGSI TIDAK DIPANGGIL
 Potongan kode:
-`print("Kategori:", kategori_nilai)`
+```python
+print("Kategori:", kategori_nilai)
+```
 
 # 1) Penjelasan Bug
 
@@ -56,7 +64,9 @@ jadi disini program tetap hidup, tapi salah makna.
 
 Panggil fungsi dengan parameter `(rata)`:
 
-`print("Kategori:", kategori_nilai(rata))`
+```python
+print("Kategori:", kategori_nilai(rata))
+```
 
 
 
